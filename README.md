@@ -30,8 +30,9 @@ This project demonstrates how to design and configure a highly available 3-tier 
 ### 3. Set Up Security Groups;
    
   -Four security groups were created (bastionSG, appserverSG, webserverSG and dbSG)
+  ![image alt]( https://github.com/ris21/Design-and-configure-a-highly-available-3-tier-Architecture-on-AWS/blob/main/security%20groups.PNG)
    
-### 4. Launched EC2 Instances for the web server, app server and bastion host);
+### 4. Launched EC2 Instances for the web server, app server and bastion host;
    
   -Bastion Host; launched in Public Subnet with public IP.
   -Web Server: launched in Public Subnet with public IP, with user data to install Apache.
@@ -40,4 +41,6 @@ This project demonstrates how to design and configure a highly available 3-tier 
 ### 5. Created RDS Database (MariaDB) with;
     
   -A DB subnet group created with Private subnet
-  -Assigned to the vPC, Database subnet group, and Database security group; public access was disabled.
+  ![image alt]( https://github.com/ris21/Design-and-configure-a-highly-available-3-tier-Architecture-on-AWS/blob/main/DBinstance.PNG)
+  -Assigned to the VPC, Database subnet group, and Database security group; public access was disabled.
+  ![image alt]( https://github.com/ris21/Design-and-configure-a-highly-available-3-tier-Architecture-on-AWS/blob/main/dbsubnetgroup.PNG)

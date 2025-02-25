@@ -1,6 +1,8 @@
 # Design-and-configure-a-highly-available-3-tier-Architecture-on-AWS
 How to design and configure a highly available 3-tier Architecture on AWS
 
+![Alt text](https://github.com/ris21/Design-and-configure-a-highly-available-3-tier-Architecture-on-AWS/blob/main/Tier3Topology.png)
+
 ## Requisite Skills
 - AWS Management Console 
 - Familiarity with AWS VPC, EC2, and RDS services

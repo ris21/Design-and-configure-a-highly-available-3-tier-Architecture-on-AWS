@@ -21,6 +21,7 @@ This project demonstrates how to design and configure a highly available 3-tier 
 ### 2. Configured Routing and Gateways
    
   -An Elastic IP was allocated and an Internet Gateway (risIGW) was created and attached to (rispar vpc).
+  ![image alt]( https://github.com/ris21/Design-and-configure-a-highly-available-3-tier-Architecture-on-AWS/blob/main/elasticIP.PNG)
   -A NAT Gateway (risNGW) was set up in PublicSubnet1 using the Elastic IP.
   ![image alt]( https://github.com/ris21/Design-and-configure-a-highly-available-3-tier-Architecture-on-AWS/blob/main/NATGW.PNG)
   -Two route tables were created, Public route table and Private route table.

@@ -5,7 +5,7 @@ How to design and configure a highly available 3-tier Architecture on AWS
 - AWS Management Console 
 - Familiarity with AWS VPC, EC2, and RDS services
 - SSH'ing into an instance for testing
-- 
+  
 ## Project Description
 This project demonstrates how to design and configure a highly available 3-tier Architecture on AWS with the following AWS Services, a Virtual Private Cloud (VPC) with public and private subnets, EC2 instances (Bastion Host, Web Server, App Server), an RDS database, and associated routing and security configurations on AWS. Connectivity between components was tested to ensure proper setup.
 
@@ -19,6 +19,6 @@ This project demonstrates how to design and configure a highly available 3-tier 
 3. Set Up Security Groups;
   -Four security groups were created (bastionSG, appserverSG, webserverSG and dbSG)
 4. Launched EC2 Instances for the web server, app server and bastion host);
-  -Bastion Host; launched in PublicSubnet1 with public IP, assigned Bastion Host SG.
-  -Web Server: launched in PublicSubnet1 with public IP, with user data to install Apache.
-  -App Server: launched in PrivateSubnet1, with user data
+  -Bastion Host; launched in Public Subnet with public IP.
+  -Web Server: launched in Public Subnet with public IP, with user data to install Apache.
+  -App Server: launched in PrivateSubnet1, with user data to install mariaDB.

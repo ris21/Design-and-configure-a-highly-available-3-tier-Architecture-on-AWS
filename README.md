@@ -14,7 +14,7 @@ This project demonstrates how to design and configure a highly available 3-tier 
 ## Project Steps
 ### 1. Created VPC and Subnets;
    
-  -A VPC (risvpc) was created with a CIDR block of 192.168.0.0/16 and 4 Subnets (Public and private) were configured in 2 AZs.
+  -A VPC (rispar vpc) was created with a CIDR block of 192.168.0.0/16 and 4 Subnets (Public and private) were configured in 2 AZs.
   ![image alt]( https://github.com/ris21/Design-and-configure-a-highly-available-3-tier-Architecture-on-AWS/blob/main/vpc.PNG)
    
 ### 2. Configured Routing and Gateways

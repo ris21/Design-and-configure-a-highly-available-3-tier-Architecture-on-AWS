@@ -36,7 +36,19 @@ This project demonstrates how to design and configure a highly available 3-tier 
    
   -Bastion Host; launched in Public Subnet with public IP.
   -Web Server: launched in Public Subnet with public IP, with user data to install Apache.
+  
+  #!/bin/bash
+  sudo yum update -y
+  sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2
+  sudo yum install -y httpd
+  sudo systemctl start httpd
+  sudo systemctl enable httpd
+  
   -App Server: launched in PrivateSubnet1, with user data to install mariaDB.
+  
+  #!/bin/bash
+  sudo yum install -y mariadb-server
+  sudo service mariadb start
   
    ![image alt](https://github.com/ris21/Design-and-configure-a-highly-available-3-tier-Architecture-on-AWS/blob/main/EC2%20instances%20-web%2C%20app%20and%20bastion%20host.PNG)
    

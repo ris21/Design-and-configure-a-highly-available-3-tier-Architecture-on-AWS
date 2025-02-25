@@ -37,6 +37,7 @@ This project demonstrates how to design and configure a highly available 3-tier 
   -Bastion Host; launched in Public Subnet with public IP.
   -Web Server: launched in Public Subnet with public IP, with user data to install Apache.
   -App Server: launched in PrivateSubnet1, with user data to install mariaDB.
+  
    
 ### 5. Created RDS Database (MariaDB) with;
     

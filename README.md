@@ -38,6 +38,7 @@ This project demonstrates how to design and configure a highly available 3-tier 
   -Web Server: launched in Public Subnet with public IP, with user data to install Apache.
   -App Server: launched in PrivateSubnet1, with user data to install mariaDB.
   
+   ![image alt]( [https://github.com/ris21/Design-and-configure-a-highly-available-3-tier-Architecture-on-AWS/blob/main/security%20groups.PNG](https://github.com/ris21/Design-and-configure-a-highly-available-3-tier-Architecture-on-AWS/blob/main/EC2%20instances%20-web%2C%20app%20and%20bastion%20host.PNG))
    
 ### 5. Created RDS Database (MariaDB) with;
     

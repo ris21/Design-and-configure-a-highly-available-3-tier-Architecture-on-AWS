@@ -12,25 +12,25 @@ This project demonstrates how to design and configure a highly available 3-tier 
 ## Project Steps
 ### 1. Created VPC and Subnets;
    
-    -A VPC (risvpc) was created with a CIDR block of 192.168.0.0/16 and 4 Subnets (Public and private) were configured in 2 AZs.
+  -A VPC (risvpc) was created with a CIDR block of 192.168.0.0/16 and 4 Subnets (Public and private) were configured in 2 AZs.
    
-3. Configured Routing and Gateways
+###2. Configured Routing and Gateways
    
   -An Elastic IP was allocated and an Internet Gateway (risIGW) was created and attached to (risvpc).
   -A NAT Gateway (risNGW) was set up in PublicSubnet1 using the Elastic IP.
   -Two route tables were created, Public route table and Private route table.
    
-5. Set Up Security Groups;
+###3. Set Up Security Groups;
    
   -Four security groups were created (bastionSG, appserverSG, webserverSG and dbSG)
    
-7. Launched EC2 Instances for the web server, app server and bastion host);
+###4. Launched EC2 Instances for the web server, app server and bastion host);
    
   -Bastion Host; launched in Public Subnet with public IP.
   -Web Server: launched in Public Subnet with public IP, with user data to install Apache.
   -App Server: launched in PrivateSubnet1, with user data to install mariaDB.
    
-9. Created RDS Database (MariaDB) with;
+###5. Created RDS Database (MariaDB) with;
     
   -A DB subnet group created with Private subnet
   -Assigned to the vPC, Database subnet group, and Database security group; public access was disabled.

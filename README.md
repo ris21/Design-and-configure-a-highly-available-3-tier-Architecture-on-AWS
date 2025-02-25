@@ -10,9 +10,9 @@ How to design and configure a highly available 3-tier Architecture on AWS
 This project demonstrates how to design and configure a highly available 3-tier Architecture on AWS with the following AWS Services, a Virtual Private Cloud (VPC) with public and private subnets, EC2 instances (Bastion Host, Web Server, App Server), an RDS database, and associated routing and security configurations on AWS. Connectivity between components was tested to ensure proper setup.
 
 ## Project Steps
-1. Created VPC and Subnets;
+### 1. Created VPC and Subnets;
    
-  -A VPC (risvpc) was created with a CIDR block of 192.168.0.0/16 and 4 Subnets (Public and private) were configured in 2 AZs.
+    -A VPC (risvpc) was created with a CIDR block of 192.168.0.0/16 and 4 Subnets (Public and private) were configured in 2 AZs.
    
 3. Configured Routing and Gateways
    

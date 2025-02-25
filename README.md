@@ -19,7 +19,7 @@ This project demonstrates how to design and configure a highly available 3-tier 
    
 ### 2. Configured Routing and Gateways
    
-  -An Elastic IP was allocated and an Internet Gateway (risIGW) was created and attached to (risvpc).
+  -An Elastic IP was allocated and an Internet Gateway (risIGW) was created and attached to (rispar vpc).
   -A NAT Gateway (risNGW) was set up in PublicSubnet1 using the Elastic IP.
   -Two route tables were created, Public route table and Private route table.
    
